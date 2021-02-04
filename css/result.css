@@ -1,0 +1,344 @@
+/* Result Section */
+.result-section {
+  min-height: 307px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: #F8F8F8;
+}
+
+.result-section.result-found {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.result-section.result-found p,
+.result-section .result-details h2,
+.result-section .result-details h3 {
+  text-align: left;
+}
+
+.result-section h1 {
+  color: #004A80;
+}
+
+.result-section p {
+  color: #4A4A4A;
+  padding-top: 15px;
+}
+
+.result-section .result-details {
+  background: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+  border-radius: 30px;
+  padding: 25px 15px;
+  margin-top: 15px;
+}
+
+.result-section .result-details h2,
+.result-section .result-details h3 {
+  color: #004A80;
+  font-weight: bold;
+}
+
+.result-section .result-details h2 {
+  font-size: 32px;
+}
+
+.result-section .result-details h3 {
+  font-size: 20px;
+  padding-top: 15px;
+}
+
+.result-section .result-details p {
+  padding-top: 7px;
+  color: #000;
+  font-size: 16px;
+}
+
+.result-section .result-details p span,
+.result-section .result-details p a {
+  display: block;
+}
+
+.result-section .result-details p a {
+  color: #004A80;
+  text-align: left;
+}
+
+.result-section .result-details.hidden {
+  display: none;
+}
+
+/* New Search Section */
+.new-search-section {
+  background-color: #004A80;
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.new-search-section h1 {
+  padding: 0 0 10px;
+}
+
+.new-search-section p {
+  text-align: center;
+  line-height: 1.2;
+}
+
+.new-search-section p span {
+	color: #F6BC25;
+  font-weight: 500;
+}
+
+.new-search-section form {
+  padding: 18px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.new-search-section .email-input-wrapper {
+  border-radius: 3px;
+}
+
+.new-search-section .form-field {
+  border-radius: 3px;
+}
+
+.new-search-section form.error .email-input-wrapper {
+  background: linear-gradient(#F0002F, #DC0015);
+  padding: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.new-search-section .error-message {
+  display: none;
+  font-size: 14px;
+  color: #FFF;
+  line-height: 1.285;
+  text-align: left;
+}
+
+.new-search-section .error-message span {
+  display: block;
+  background-color: #DC0015;
+  padding: 4px 12px;
+  border-radius: 3px;
+  border: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.new-search-section form.error input {
+  background-color: white;
+}
+
+.new-search-section form.error .error-message {
+  display: block;
+}
+
+.new-search-section form button {
+  margin-top: 10px;
+}
+
+.new-search-section small {
+  color: #F6BC25;
+  display: flex;
+  font-weight: 500;
+  align-items: flex-start;
+}
+
+.new-search-section small img {
+  padding-right: 10px;
+}
+
+@media (min-width: 768px) {
+  /* Result Section */
+  .result-section {
+    min-height: 447px;
+  }
+  
+  .result-section.result-found {
+    padding-bottom: 40px;
+  }
+
+  .result-section .result-details {
+    margin-top: 30px;
+  }
+
+  .result-section .result-details:before {
+    content: "";
+    width: 63px;
+    min-width: 63px;
+    height: 63px;
+    background-image: url('../assets/SVGs/icn_person.svg');
+    background-repeat: no-repeat;
+    background-size: 32.2px auto;
+    background-position: center;
+    background-color: #004A80;
+    border-radius: 50%;
+    display: block;
+    grid-area: icon;
+  }
+
+  .result-section .name {
+    grid-area: name;
+  }
+  .result-section .description {
+    grid-area: description;
+  }
+  .result-section .address-wrapper {
+    grid-area: address;
+  }
+  .result-section .phone-number-wrapper {
+    grid-area: phoneNumber;
+  }
+  .result-section .email-wrapper {
+    grid-area: email;
+  }
+  .result-section .relatives-wrapper {
+    grid-area: relatives;
+  }
+
+  .result-section .result-details {
+    display: grid;
+    grid-template-columns: 73px 1fr 1fr;
+    grid-template-areas: 
+      "icon name name"
+      "icon description description"
+      "icon address phoneNumber"
+      "icon email relatives";
+    padding: 30px;
+  }
+
+  .result-section .result-details p {
+    padding-top: 7px;
+  }
+
+  .result-section .list-item h3 {
+    padding-top: 20px;
+  }
+
+  .result-section .list-item:nth-of-type(even) h3 {
+    padding-top: 23px;
+  }
+
+  .result-section .list-item p {
+    padding-top: 5px;
+  }
+
+  /* New Search Section */
+  .new-search-section {
+    padding-top: 63px;
+    padding-bottom: 106px;
+  }
+  
+  .new-search-section h1 {
+    padding-bottom: 15px;
+  }
+  
+  .new-search-section form {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .new-search-section form .form-field {
+    width: 100%;
+  }
+
+  .new-search-section form input {
+    padding: 24px 12px;
+  }
+
+  .new-search-section form.error input {
+    padding: 22px 12px;
+}
+
+  .new-search-section .email-input-wrapper {
+    border-radius: 3px;
+  }
+
+  .new-search-section .error-message {
+    position: absolute;
+    font-size: 16px;
+  }
+
+  .hero-section .error-message span {
+    display: inline-block;
+  }
+
+  .new-search-section form button {
+    width: 180px;
+    min-width: 180px;
+    padding: 21px 0;
+    margin-top: 0;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  /* Result Section */
+  .result-section > * {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  .result-section.result-found {
+    padding-bottom: 60px;
+  }
+
+  .result-section.result-found > p {
+    text-align: center;
+  }
+
+  .result-section .result-details {
+    display: grid;
+    grid-template-columns: 110px 1fr 1fr;
+    padding: 40px;
+  }
+
+  .result-section .result-details:before {
+    width: 90px;
+    min-width: 90px;
+    height: 90px;
+  }
+
+  .result-section .result-details h3 {
+    font-size: 22px;
+  }
+
+  .result-section .result-details p {
+    font-size: 18px;
+    padding-top: 5px;
+  }
+
+  .result-section .list-item:nth-of-type(even) h3 {
+    padding-top: 20px;
+  }
+
+  .result-section p,
+  .new-search-section p {
+    font-size: 24px;
+  }
+
+  /* New Search Section */
+  .new-search-section > * {
+    max-width: 980px;
+    margin: auto;
+  }
+
+  .new-search-section {
+    padding-top: 95px;
+    padding-bottom: 105px;
+  }
+
+  .new-search-section .error-message {
+    position: initial;
+  }
+}
