@@ -29,11 +29,13 @@ small {
 }
 
 a {
-	color: #F6BC25;
-	letter-spacing: 0;
-	text-align: center;
-	line-height: 22px;
+	line-height: 1.5;
 	text-decoration: none;
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
 }
 
 button {
@@ -47,6 +49,17 @@ button {
 	padding: 12px;
 	font-weight: bold;
 	letter-spacing: 0.93px;
+}
+
+button:hover {
+  background-image: none;
+  background-color: #F2DA56;
+}
+
+button:focus {
+  background-image: none;
+  background-color: #F6BC25;
+  outline: none;
 }
 
 input {
