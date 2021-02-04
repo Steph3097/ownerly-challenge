@@ -53,7 +53,7 @@ class Header extends HTMLElement {
 
 
     // Attach created elements to the shadow DOM
-    // container.append(img, menu);
+    container.append(img, menu);
     wrapper.append(container);
     shadow.append(style, wrapper);
   }
