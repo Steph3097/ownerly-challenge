@@ -14,7 +14,7 @@ class Footer extends HTMLElement {
     const footerLinks = document.createElement('div');
     footerLinks.classList.add('footer-links');
 
-    footerLinks.innerHTML = `<a>Terms</a> | <a>Privacy</a>`
+    footerLinks.innerHTML = `<a href="#">Terms</a> | <a href="#">Privacy</a>`
 
     const style = document.createElement('style');
     style.textContent = `
@@ -35,6 +35,7 @@ class Footer extends HTMLElement {
       footer a {
         font-weight: bold;
         font-size: 14px;
+        text-decoration: none;
       }
       .footer-links {
         text-align: center;
@@ -63,7 +64,7 @@ class Footer extends HTMLElement {
       }
     `
 
-    // Attach created elements to the shadow dom 
+    // Attach created elements to the shadow DOM
     wrapper.append(text, footerLinks);
     shadow.append(style, wrapper);
   }
