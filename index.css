@@ -43,7 +43,6 @@ body {
 .hero-section .error-message {
   display: none;
   font-size: 14px;
-  color: #FFF;
   line-height: 1.285;
   text-align: left;
 }
@@ -51,6 +50,7 @@ body {
 .hero-section .error-message span {
   display: block;
   background-color: #DC0015;
+  color: #FFF;
   padding: 4px 12px;
   border-radius: 3px;
   border: none;
