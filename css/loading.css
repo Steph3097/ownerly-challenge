@@ -1,0 +1,43 @@
+main {
+  background-color: #F8F8F8;
+  padding: 60px 15px 85px;
+}
+
+.loader {
+  display: flex;
+  flex-direction: column;
+}
+
+.loader img {
+  max-width: 124px;
+  margin: auto;
+}
+
+.loader p {
+  color: #004A80;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 16px;
+}
+
+@media (min-width: 768px) {
+  main {
+    padding: 100px 25px 137px;
+  }
+
+  .loader img {
+    max-width: 154px;
+  }
+  
+  .loader p {
+    font-size: 24px;
+    padding-top: 28px;
+  }
+}
+
+@media (min-width: 1440px) {
+  main {
+    padding: 300px 25px 381px;
+  }
+}
