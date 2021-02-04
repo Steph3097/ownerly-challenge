@@ -111,23 +111,6 @@ input:focus {
   font-weight: bold;
 }
 
-header {
-  padding: 20px 15px;
-  position: sticky;
-  top: 0;
-  background-color: #004A80;
-}
-
-header .container {
-  display: flex;
-  justify-content: space-between;
-}
-
-header .menu a {
-  margin-left: 25px;
-  max-height: 23px;
-}
-
 section {
 	padding: 0 15px;
 }
@@ -153,14 +136,5 @@ section {
 
   p {
     font-size: 22px;
-  }
-
-  header {
-    padding: 20px 0;
-  }
-
-  header .container {
-    max-width: 980px;
-    margin: auto;
   }
 }
